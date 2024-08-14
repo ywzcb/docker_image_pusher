@@ -1,3 +1,2 @@
-nginx:1.26.1
-portainer-ce:2.20.3
-portainer-agent:2.20.3
+portainer-ce:latest
+portainer-agent:latest
