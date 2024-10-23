@@ -2,4 +2,4 @@
 #portainer/agent
 #tomcat:9.0.90
 #mysql:8.0.39
-zentao:18.2
+easysoft/zentao:18.2
