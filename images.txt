@@ -4,5 +4,5 @@
 #mysql:8.0.39
 #easysoft/zentao:18.2
 #mariadb:10.11
-seafileltd/seafile-mc:12.0-latest
+#seafileltd/seafile-mc:12.0-latest
 memcached:1.6.18
