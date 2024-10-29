@@ -7,4 +7,5 @@
 #seafileltd/seafile-mc:12.0-latest
 #memcached:1.6.18
 #seafileltd/seafile-mc:11.0.8
-mysql:8.0.37
+#mysql:8.0.37
+rancher:v2.8.6-rc3
