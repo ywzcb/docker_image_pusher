@@ -10,4 +10,4 @@
 #mysql:8.0.37
 #rancher/rancher:latest
 rancher/rancher:latest
-sonataype/nexus3
+sonatype/nexus3
