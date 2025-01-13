@@ -8,4 +8,6 @@
 #memcached:1.6.18
 #seafileltd/seafile-mc:11.0.8
 #mysql:8.0.37
+#rancher/rancher:latest
 rancher/rancher:latest
+sonataype/nexus3
