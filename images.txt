@@ -10,4 +10,5 @@
 #mysql:8.0.37
 #rancher/rancher:latest
 #rancher/rancher:latest
-sonatype/nexus3
+#sonatype/nexus3
+gitlab/gitlab-ce:17.2.9
