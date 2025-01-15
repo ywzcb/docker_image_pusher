@@ -11,4 +11,4 @@
 #rancher/rancher:latest
 #rancher/rancher:latest
 #sonatype/nexus3
-gitlab/gitlab-ce:17.2.9
+gitlab-jh:latest
