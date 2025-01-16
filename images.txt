@@ -13,4 +13,5 @@
 #sonatype/nexus3
 #gitlab/gitlab-ee:17.2.2-ee.0
 #gitlab/gitlab-runner:latest
-alpine:latest
+#alpine:latest
+docker:dind
