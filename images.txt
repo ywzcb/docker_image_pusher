@@ -15,4 +15,5 @@
 #gitlab/gitlab-runner:latest
 #alpine:latest
 #docker:dind
-onerahmet/openai-whisper-asr-webservice:latest
+#onerahmet/openai-whisper-asr-webservice:latest
+seafileltd/seafile-mc:12.0-latest
