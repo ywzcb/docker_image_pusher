@@ -17,5 +17,5 @@
 #docker:dind
 #onerahmet/openai-whisper-asr-webservice:latest
 #seafileltd/seafile-mc:12.0-latest
-#seafileltd/onlyoffice-documentserver:8.1
-seafileltd/sdoc-server:1.0-latest
+#seafileltd/sdoc-server:1.0-latest
+seafileltd/onlyoffice-documentserver:8.1
