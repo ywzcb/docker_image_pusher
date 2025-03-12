@@ -4,4 +4,5 @@
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
 #seafileltd/sdoc-server:1.0-latest
-python:3.11-slim
+#python:3.11-slim
+redis:7-alpine
