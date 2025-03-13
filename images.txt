@@ -6,4 +6,5 @@
 #seafileltd/sdoc-server:1.0-latest
 #python:3.11-slim
 #redis:7-alpine
-ollama/ollama:latest
+#ollama/ollama:latest
+node:18-slim
