@@ -7,4 +7,6 @@
 #python:3.11-slim
 #redis:7-alpine
 #ollama/ollama:latest
-node:18-slim
+#node:18-slim
+langgenius/dify-api:1.0.1
+langgenius/dify-web:1.0.1
