@@ -37,3 +37,4 @@ mariadb:11.7
 memcached:1.6.37
 onlyoffice/documentserver
 seafileltd/seafile-mc:11.0-latest
+openresty/openresty:1.27.1.1-4-centos7
