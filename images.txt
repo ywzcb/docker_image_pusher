@@ -45,3 +45,4 @@ zabbix/zabbix-snmptraps:alpine-7.0-latest
 busybox
 mysql:8.0-oracle
 mysql:9.2-oracle
+zabbix/zabbix-agent:alpine-7.0-latest
