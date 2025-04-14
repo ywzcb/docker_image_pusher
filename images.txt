@@ -46,3 +46,4 @@ busybox
 mysql:8.0-oracle
 mysql:9.2-oracle
 zabbix/zabbix-agent:alpine-7.0-latest
+prom/snmp-exporter:v0.22.0
