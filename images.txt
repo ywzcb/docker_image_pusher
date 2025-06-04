@@ -48,5 +48,7 @@
 #zabbix/zabbix-agent:alpine-7.0-latest
 #prom/snmp-exporter:v0.22.0
 #centos:centos7.9.2009
-apache/doris:fe-3.0.5
-apache/doris:be-3.0.5
+#apache/doris:fe-3.0.5
+#apache/doris:be-3.0.5
+bladex/sentinel-dashboard:1.8.1
+
