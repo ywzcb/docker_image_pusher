@@ -50,5 +50,5 @@
 #centos:centos7.9.2009
 #apache/doris:fe-3.0.5
 #apache/doris:be-3.0.5
-bladex/sentinel-dashboard:1.8.1
-
+#bladex/sentinel-dashboard:1.8.1
+postgres:17.5
