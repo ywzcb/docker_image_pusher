@@ -52,5 +52,6 @@
 #apache/doris:be-3.0.5
 #bladex/sentinel-dashboard:1.8.1
 #postgres:17.5
-dpage/pgadmin4:9.4
-dbeaver/cloudbeaver:25.1
+#dpage/pgadmin4:9.4
+#dbeaver/cloudbeaver:25.1
+gitlab/gitlab-runner:v17.2.1
