@@ -18,4 +18,5 @@
 #onerahmet/openai-whisper-asr-webservice:latest
 #seafileltd/seafile-mc:12.0-latest
 #seafileltd/sdoc-server:1.0-latest
-onlyoffice/documentserver:latest
+#onlyoffice/documentserver:latest
+nacos/nacos-server:2.3.2
