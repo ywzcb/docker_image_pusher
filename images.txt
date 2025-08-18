@@ -39,4 +39,5 @@
 #dpage/pgadmin4:9.4
 #dbeaver/cloudbeaver:25.1
 #gitlab/gitlab-runner:v17.2.1
-nacos/nacos-server:v2.3.2
+#nacos/nacos-server:v2.3.2
+alibaba/redis-shake:latest
