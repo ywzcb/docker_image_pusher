@@ -41,4 +41,6 @@
 #gitlab/gitlab-runner:v17.2.1
 #nacos/nacos-server:v2.3.2
 #ghcr.io/tair-opensource/redisshake:latest
-portainer/portainer-ce:2.27.9
+#portainer/portainer-ce:2.27.9
+portainer/portainer-agent:2.27.9
+
