@@ -42,5 +42,5 @@
 #nacos/nacos-server:v2.3.2
 #ghcr.io/tair-opensource/redisshake:latest
 #portainer/portainer-ce:2.27.9
-portainer/portainer-agent:latest
+portainer/agent:2.27.9
 
