@@ -43,5 +43,7 @@
 #ghcr.io/tair-opensource/redisshake:latest
 #portainer/portainer-ce:2.27.9
 #portainer/agent:2.27.9
-redis:latest
+#redis:latest
+redis:7.4.5
+redis:7.4.6
 
