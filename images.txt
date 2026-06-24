@@ -49,5 +49,6 @@
 #pangliang/rocketmq-console-ng:latest
 #mysql:8.0.43
 #gcr.io/kaniko-project/executor:latest
-node:20-alpine
+#node:20-alpine
+feiyu563/prometheus-alert:latest
 
