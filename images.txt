@@ -51,6 +51,7 @@
 #gcr.io/kaniko-project/executor:latest
 #node:20-alpine
 #feiyu563/prometheus-alert:latest
-redis:7
-postgres:17
+#redis:7
+#postgres:17
+apache/superset:latest
 
