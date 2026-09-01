@@ -53,5 +53,6 @@
 #feiyu563/prometheus-alert:latest
 #redis:7
 #postgres:17
-apache/superset:latest
-
+#apache/superset:latest
+apache/skywalking-oap:11.0.0
+apache/skywalking-ui:1.0.0
