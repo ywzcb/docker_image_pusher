@@ -56,3 +56,4 @@
 #apache/superset:latest
 apache/skywalking-oap:11.0.0
 apache/skywalking-ui:1.0.0
+apache/skywalking-banyandb:0.11.0
