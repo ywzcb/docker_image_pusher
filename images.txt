@@ -54,6 +54,6 @@
 #redis:7
 #postgres:17
 #apache/superset:latest
-skywalking-oap
-skywalking-ui
-skywalking-banyandb
+apache/skywalking-oap
+apache/skywalking-ui
+apache/skywalking-banyandb
