@@ -58,4 +58,5 @@
 #apache/skywalking-ui:horizon-1.0.0
 #apache/skywalking-banyandb:0.11.0
 #apache/apisix:3.19.0-ubuntu
-bitnamilegacy/etcd:3.5.7
+#bitnamilegacy/etcd:3.5.7
+ghcr.io/ithtelab/workbuddy-manager:latest
