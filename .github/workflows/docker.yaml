@@ -16,7 +16,9 @@ jobs:
 
   build:
     name: Pull
-    runs-on: ubuntu-latest
+    # ubuntu-latest 正在灰度 Ubuntu 26.04 / Docker 29，默认 containerd image store
+    # 会把镜像层写到 /var/lib/containerd，并同时保留压缩层与解压层。
+    runs-on: ubuntu-24.04
     steps:
     - name: Before freeing up disk space
       run: |
@@ -29,24 +31,31 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-
-        root-reserve-mb: 2048
+        # 根分区还要承载 /tmp、workspace 与 push 临时数据，不能压到只剩 2GB
+        root-reserve-mb: 4096
         swap-size-mb: 128
         remove-dotnet: 'true'
         remove-haskell: 'true'
-        # 如果空间还是不够用，可以把以下开启，清理出更多空间
         remove-android: 'true'
         remove-codeql: 'true'
+        remove-docker-images: 'true'
         build-mount-path: '/var/lib/docker/'
 
+    # LVM 大卷只挂在 /var/lib/docker。切回 overlay2，让所有镜像层都落在大卷上，
+    # 避免 Docker 29 把层写进根分区的 /var/lib/containerd。
     - name: Restart docker
-      run: sudo service docker restart
+      run: |
+        echo '{"features":{"containerd-snapshotter":false}}' | sudo tee /etc/docker/daemon.json
+        sudo systemctl restart docker
+        docker info -f '{{ .Driver }}'
+        df -h / /var/lib/docker
 
     - name: Free up disk space complete
       run: |
         echo "Free up disk space complete"
         echo "=============================================================================="
         df -hT
+        docker system df
         echo "=============================================================================="
 
     - name: Checkout Code
@@ -57,7 +66,7 @@ jobs:
 
     - name: Build and push image Aliyun
       run: |
-        docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+        echo "$ALIYUN_REGISTRY_PASSWORD" | docker login -u "$ALIYUN_REGISTRY_USER" --password-stdin "$ALIYUN_REGISTRY"
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
@@ -145,13 +154,15 @@ jobs:
             docker push $new_image
             echo "开始清理磁盘空间"
             echo "=============================================================================="
-            df -hT
+            df -h / /var/lib/docker
+            docker system df
             echo "=============================================================================="
-            docker rmi $image
-            docker rmi $new_image
+            docker rmi "$image" "$new_image" 2>/dev/null || true
+            docker image prune -f
+            docker builder prune -f
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
-            df -hT
+            df -h / /var/lib/docker
             echo "=============================================================================="     
             
         done < images.txt
