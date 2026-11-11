@@ -61,5 +61,5 @@
 #bitnamilegacy/etcd:3.5.7
 #ghcr.io/ithtelab/workbuddy-manager:latest
 #sonatype/nexus3:3.96.4
-sonatype/nexus3:3.98.1
-
+#sonatype/nexus3:3.98.1
+eclipse-temurin:8u512-b09-jdk-alpine-3.24
