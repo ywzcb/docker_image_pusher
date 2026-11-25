@@ -65,4 +65,5 @@
 #eclipse-temurin:8u512-b09-jdk-alpine-3.24
 #sonatype/nexus3:3.98.2
 #tomcat:11.0.29
-tomcat:9.0.124
+#tomcat:9.0.124
+grafana/grafana:13.3.2
